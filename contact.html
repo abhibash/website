@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- For Responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Css -->
+    <link rel="stylesheet" href="style.css">
+    <script src = "index.js" defer></script>
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Icons -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>Abhi Bashyal</title>
+</head>
+<body>
+    <!-- NavBar -->
+    <nav>
+        <a href="index.html" class="brand">
+            <h1>AB</h1>
+        </a>
+
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#project">Projects</a>
+            <button class="btn-2" onclick="window.location.href='contact.html'">Contact Me</button>
+        </div>
+
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Contac Page  -->
+
+    <section class="contact">
+        <h1>Lets Get In Touch</h1>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <p>647-472-8291</p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <p>abhibashyal05@gmail.com</p>
+            </div>
+        </div>
+
+        <form action="https://api.web3forms.com/submit" method="post" class="contact-form">
+            <input type="hidden" name="access_key" value="2bcce031-4d86-48fc-87c4-230e14d1f9d1">
+            
+            <input type="text" name="Name" placeholder="Name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <input type="number" name="Phone" placeholder="Phone" required>
+
+            <input type="textarea" name="Message Me" placeholder="Message Me" required>
+            
+
+            <!-- Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+
+            <button class="btn-contact" type="submit">Submit</button>
+        </form>
+
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <hr>
+        <div>
+            <div class="socials">
+
+                 <!-- Instagram -->
+                 <a href="https://www.instagram.com/abh1.b">
+                    <div class="social-box">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </a>
+
+                <!-- Linkedin -->
+                <a href="http://linkedin.com/in/abhibashyal">
+                    <div class="social-box">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </a>
+
+                <!-- Github -->
+                <a href="https://github.com/abhibash">
+                    <div class="social-box">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </a>
+
+            </div>
+            <p></p>
+        </div> 
+    </footer>
+</body>
+</html>

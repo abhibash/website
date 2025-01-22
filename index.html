@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- For Responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Css -->
+    <link rel="stylesheet" href="style.css">
+    <script src = "index.js" defer></script>
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Icons -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    
+    <title>Abhi Bashyal</title>
+</head>
+<body>
+    <!-- NavBar -->
+    <nav>
+        <a href="index.html" class="brand">
+            <h1>AB</h1>
+        </a>
+
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Works</a>
+            <button class="btn-2" onclick="window.location.href='contact.html'">Contact Me</button>
+        </div>
+
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero-section">
+        <img src="img/background.png" alt="img">
+
+        <div class="hero-headline">
+            <h1>Abhi Bashyal</h1>
+            <h2>Software Developer</h2>
+
+            <!-- Hero Buttons -->
+            <div class="hero-buttons">
+                <button class="btn-2 btn-hero" onclick="openResume()">
+                    <i class="faa-solid fa-arrow-right-long" style="color: white;"></i>
+                    <p>See My Resume</p>
+                </button>
+                <button class="btn-2 btn-hero" onclick="window.location.href='index.html#projects'">
+                    <i class="faa-solid fa-arrow-right-long" style="color: white;"></i>
+                    <p>See My Projects</p>
+                </button>
+
+                <!-- <button class="btn-2 btn-hero" onclick="window.location.href='contact.html'">Contact Me</button> -->
+            </div>
+           
+
+            <!-- Hero Logos -->
+            <div class="hero-logos">
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-c"></i>
+                <i class="fa-brands fa-python"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-css"></i>
+                
+            </div>
+
+            <div class="hero-tagline">
+                <!-- <p>I've always been curios about technology and how it shapes our world</p> -->
+                <p> Ever since I was a kid, I've been fascinated by computers.</p>
+                <hr class="divider">
+            </div>
+
+        </div>
+
+   
+    </section>
+    <!-- Hero Section End -->
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div>
+            <div class="about-headline">
+                <p> I’m Abhi Bashyal, a second year student who is passionate about <b>learning</b>, <b>creating</b>, and <b>making a difference</b>. 
+                    Whether it’s through building projects, exploring new ideas, or collaborating with others, I’m always looking for ways to grow and contribute. 
+                </p>
+                <hr class="divider">
+            </div>
+            <img src="img/about-img-1.png" alt="img">
+        </div>
+
+        <div>
+            <img src="img/about-img-2.png" alt="img" id="second-about-img">
+            <div class="about-headline" id="second-about-headline ">
+                <p> When I’m not working, you’ll find me staying active, enjoying music, or diving into a good challenge. 
+                    Thanks for stopping by—feel free to <b>explore</b> and <b>connect</b> !
+                </p>
+                <button class="btn-2 btn-about" onclick="window.location.href='contact.html'"> <p>Contact Me</p></button>
+                <hr class="divider">
+            </div>
+
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Project Section -->
+    <section class="projects" id="projects">
+        <h1>Latest Projects</h1>
+
+        <div class="project-container">
+
+            <!-- Project 1 -->
+            <div class="project-item">
+                <img src="img/linguascribe.png" alt="img">
+                <div class="project-title">
+                    <h4>Lingua Scribe</h4>
+                    <h5>(Audio Transcription and Translation)</h5>
+                </div>
+                <div class="project-links">
+                    <a href="project.html">View the case</a>
+                    <a href="project.html">Source Code</a>
+                </div>
+            </div>
+
+             <!-- Project 2 -->
+             <div class="project-item">
+                <img src="img/othello.png" alt="img">
+                <div class="project-title">
+                    <h4>Othello Game</h4>
+                    <h5>(Classic Strategy Board Game)</h5>
+                </div> 
+                <div class="project-links">
+                    <a href="project.html">View the case</a>
+                    <a href="project.html">Source Code</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-item">
+                <img src="img/wizardsjourney.png" alt="img">
+                <div class="project-title">
+                    <h4>Wizard’s Journey</h4>
+                    <h5>(2D Action-Adventure Game)</h5>
+                </div> 
+                <div class="project-links">
+                    <a href="project.html">View the case</a>
+                    <a href="project.html">Source Code</a>
+                </div>
+            </div>
+
+             <!-- Project 4 -->
+             <div class="project-item">
+                <img src="img/todolist.png" alt="img">
+                <div class="project-title">
+                    <h4>To-Do List</h4>
+                    <h5>(Create and Track Tasks)</h5>
+                </div> 
+                <div class="project-links">
+                    <a href="project.html">View the case</a>
+                    <a href="project.html">Source Code</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Project Section End -->
+
+    <!-- Callout Section -->
+    <div class="callout">
+        <img src="img/callout-1.png" alt="img">
+
+        <div>
+            <h2>Have a project in mind or just want to say hello?</h2>
+            <button class="btn-callout" onclick="window.location.href = 'contact.html'">
+                Lets Talk
+            </button>
+        </div>
+        <img src="img/callout-2.png" alt="img">
+    </div>
+
+    <!-- Callout Section End -->
+
+    <!-- Footer Section -->
+    <footer>
+        <hr>
+        <div>
+            <div class="socials">
+
+                 <!-- Instagram -->
+                 <a href="https://www.instagram.com/abh1.b">
+                    <div class="social-box">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </a>
+
+                <!-- Linkedin -->
+                <a href="http://linkedin.com/in/abhibashyal">
+                    <div class="social-box">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </a>
+
+                <!-- Github -->
+                <a href="https://github.com/abhibash">
+                    <div class="social-box">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </a>
+
+            </div>
+            <p></p>
+        </div> 
+    </footer>
+</body>
+</html>

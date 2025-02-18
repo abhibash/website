@@ -42,5 +42,5 @@ const sr = ScrollReveal({
 
 // Open Resume
 function openResume() {
-    window.open("/Users/abhi/Desktop/website/img/about-img-1.png"); // Replace with your PDF path
+    window.open("img/AbhiBashyal_Resume.pdf"); 
 }
